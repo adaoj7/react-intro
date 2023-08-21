@@ -1,27 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Counter from './components/Counter'
 import './App.css'
 
 function App() {
-
-  const [count,setCount] = useState(0)
-  function incrementCount(){
-    console.log("It's working")
-    setCount(count + 1)
-  }
-
-  return (
-    <>
-      <div>{count}</div>
-      <button
-      type='button'
-      onClick={incrementCount}
-      >
-        Click me to increase the count
-      </button>
-    </>
-  )
+  return <Counter/>
 }
 
 export default App
