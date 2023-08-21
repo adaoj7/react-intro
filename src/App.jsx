@@ -5,7 +5,13 @@ import Counter from './components/Counter'
 import './App.css'
 
 function App() {
-  return <Counter/>
+  return (
+  <>
+  <Counter initalValue={0}/>
+  <Counter initalValue={1000}/>
+  <Counter initalValue={-1000}/>
+  </>
+  )
 }
 
 export default App
